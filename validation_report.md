@@ -1,6 +1,6 @@
 # GroupDocs Landing Page Links Validation Report
 
-**Generated:** 2025-11-24 14:02:27
+**Generated:** 2025-11-24 14:22:15
 **Landing Page:** https://products.groupdocs.com/
 
 ## Summary
@@ -16,7 +16,7 @@
 ## Product Links
 
 | Product | Family Page | .NET | Java | Node.js via Java | Python via .NET |
-|---------|-------------|----------------|----------------|----------------|----------------|
+|---------|:------------:|:----------------:|:----------------:|:----------------:|:----------------:|
 | Annotation | [✓](https://products.groupdocs.com/annotation/) | [✓](https://products.groupdocs.com/annotation/net/) | [✓](https://products.groupdocs.com/annotation/java/) | | |
 | Assembly | [✓](https://products.groupdocs.com/assembly/) | [✓](https://products.groupdocs.com/assembly/net/) | [✓](https://products.groupdocs.com/assembly/java/) | | [✓](https://products.groupdocs.com/assembly/python-net/) |
 | Classification | [✓](https://products.groupdocs.com/classification/) | [✓](https://products.groupdocs.com/classification/net/) | | | |
