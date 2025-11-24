@@ -1,0 +1,102 @@
+{
+  "generatedAt": "2025-11-24T15:20:37.131409Z",
+  "links": {
+    "Annotation": {
+      "family": "https://products.groupdocs.com/annotation/",
+      "java": "https://products.groupdocs.com/annotation/java/",
+      "net": "https://products.groupdocs.com/annotation/net/"
+    },
+    "Assembly": {
+      "family": "https://products.groupdocs.com/assembly/",
+      "java": "https://products.groupdocs.com/assembly/java/",
+      "net": "https://products.groupdocs.com/assembly/net/",
+      "python-net": "https://products.groupdocs.com/assembly/python-net/"
+    },
+    "Classification": {
+      "family": "https://products.groupdocs.com/classification/",
+      "net": "https://products.groupdocs.com/classification/net/"
+    },
+    "Comparison": {
+      "family": "https://products.groupdocs.com/comparison/",
+      "java": "https://products.groupdocs.com/comparison/java/",
+      "net": "https://products.groupdocs.com/comparison/net/",
+      "nodejs-java": "https://products.groupdocs.com/comparison/nodejs-java/",
+      "python-net": "https://products.groupdocs.com/comparison/python-net/"
+    },
+    "Conversion": {
+      "family": "https://products.groupdocs.com/conversion/",
+      "java": "https://products.groupdocs.com/conversion/java/",
+      "net": "https://products.groupdocs.com/conversion/net/",
+      "nodejs-java": "https://products.groupdocs.com/conversion/nodejs-java/",
+      "python-net": "https://products.groupdocs.com/conversion/python-net/"
+    },
+    "Editor": {
+      "family": "https://products.groupdocs.com/editor/",
+      "java": "https://products.groupdocs.com/editor/java/",
+      "net": "https://products.groupdocs.com/editor/net/",
+      "nodejs-java": "https://products.groupdocs.com/editor/nodejs-java/"
+    },
+    "Markdown": {
+      "family": "https://products.groupdocs.com/markdown/",
+      "net": "https://products.groupdocs.com/markdown/net/"
+    },
+    "Merger": {
+      "family": "https://products.groupdocs.com/merger/",
+      "java": "https://products.groupdocs.com/merger/java/",
+      "net": "https://products.groupdocs.com/merger/net/",
+      "nodejs-java": "https://products.groupdocs.com/merger/nodejs-java/",
+      "python-net": "https://products.groupdocs.com/merger/python-net/"
+    },
+    "Metadata": {
+      "family": "https://products.groupdocs.com/metadata/",
+      "java": "https://products.groupdocs.com/metadata/java/",
+      "net": "https://products.groupdocs.com/metadata/net/",
+      "nodejs-java": "https://products.groupdocs.com/metadata/nodejs-java/",
+      "python-net": "https://products.groupdocs.com/metadata/python-net/"
+    },
+    "Parser": {
+      "family": "https://products.groupdocs.com/parser/",
+      "java": "https://products.groupdocs.com/parser/java/",
+      "net": "https://products.groupdocs.com/parser/net/"
+    },
+    "Redaction": {
+      "family": "https://products.groupdocs.com/redaction/",
+      "java": "https://products.groupdocs.com/redaction/java/",
+      "net": "https://products.groupdocs.com/redaction/net/",
+      "python-net": "https://products.groupdocs.com/redaction/python-net/"
+    },
+    "Search": {
+      "family": "https://products.groupdocs.com/search/",
+      "java": "https://products.groupdocs.com/search/java/",
+      "net": "https://products.groupdocs.com/search/net/",
+      "nodejs-java": "https://products.groupdocs.com/search/nodejs-java/"
+    },
+    "Signature": {
+      "family": "https://products.groupdocs.com/signature/",
+      "java": "https://products.groupdocs.com/signature/java/",
+      "net": "https://products.groupdocs.com/signature/net/",
+      "nodejs-java": "https://products.groupdocs.com/signature/nodejs-java/",
+      "python-net": "https://products.groupdocs.com/signature/python-net/"
+    },
+    "Total": {
+      "family": "https://products.groupdocs.com/total/",
+      "java": "https://products.groupdocs.com/total/java/",
+      "net": "https://products.groupdocs.com/total/net/",
+      "python-net": "https://products.groupdocs.com/total/python-net/"
+    },
+    "Viewer": {
+      "family": "https://products.groupdocs.com/viewer/",
+      "java": "https://products.groupdocs.com/viewer/java/",
+      "net": "https://products.groupdocs.com/viewer/net/",
+      "nodejs-java": "https://products.groupdocs.com/viewer/nodejs-java/",
+      "python-net": "https://products.groupdocs.com/viewer/python-net/"
+    },
+    "Watermark": {
+      "family": "https://products.groupdocs.com/watermark/",
+      "java": "https://products.groupdocs.com/watermark/java/",
+      "net": "https://products.groupdocs.com/watermark/net/",
+      "nodejs-java": "https://products.groupdocs.com/watermark/nodejs-java/",
+      "python-net": "https://products.groupdocs.com/watermark/python-net/"
+    }
+  }
+}
