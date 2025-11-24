@@ -35,9 +35,14 @@ jobs:
       - name: Check validation results
         id: check_results
         run: |
+          ERROR_COUNT=0
           if [ -f validation_report.md ]; then
-            # Count errors (lines with ❌)
-            ERROR_COUNT=$(grep -c "❌" validation_report.md || echo "0")
+            # Count errors (lines with ❌) and remove all whitespace/newlines
+            ERROR_COUNT=$(grep -c "❌" validation_report.md 2>/dev/null | tr -d '\n\r\t ' || echo "0")
+            # Ensure we have a valid number, default to 0 if empty
+            if [ -z "$ERROR_COUNT" ]; then
+              ERROR_COUNT=0
+            fi
             echo "error_count=$ERROR_COUNT" >> $GITHUB_OUTPUT
             
             if [ "$ERROR_COUNT" -gt 0 ]; then
@@ -46,6 +51,7 @@ jobs:
               echo "has_errors=false" >> $GITHUB_OUTPUT
             fi
           else
+            ERROR_COUNT=1
             echo "has_errors=true" >> $GITHUB_OUTPUT
             echo "error_count=1" >> $GITHUB_OUTPUT
           fi
@@ -53,7 +59,8 @@ jobs:
           # Also check if validation script failed
           if [ "${{ steps.validate.outcome }}" == "failure" ]; then
             echo "has_errors=true" >> $GITHUB_OUTPUT
-            if [ "$ERROR_COUNT" == "0" ]; then
+            if [ "$ERROR_COUNT" -eq 0 ]; then
+              ERROR_COUNT=1
               echo "error_count=1" >> $GITHUB_OUTPUT
             fi
           fi
