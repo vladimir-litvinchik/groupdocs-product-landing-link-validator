@@ -380,6 +380,9 @@ class ProductValidator:
         # Generate JSON output
         self.generate_json_output()
         
+        # Update README.md with validation report
+        self.update_readme()
+        
         return len(self.errors) == 0
     
     def generate_markdown_report(self):
@@ -434,11 +437,11 @@ class ProductValidator:
         if sorted_platforms:
             # Create table header with Family Page column
             header = "| Product | Family Page |"
-            separator = "|---------|-------------|"
+            separator = "|---------|:------------:|"
             for platform in sorted_platforms:
                 platform_header = platform_headers.get(platform, platform)
                 header += f" {platform_header} |"
-                separator += "----------------|"
+                separator += ":----------------:|"
             report_lines.append(header)
             report_lines.append(separator)
             
@@ -586,6 +589,160 @@ class ProductValidator:
             json.dump(output_data, f, indent=2, ensure_ascii=False)
         
         print(f"📄 JSON output generated: {json_filename}")
+    
+    def _generate_validation_report_section(self) -> List[str]:
+        """Generate the validation report section for README.md."""
+        report_lines = [
+            "## Validation Report",
+            "",
+            f"**Generated:** {self._get_timestamp()}",
+            "",
+            f"**Landing Page:** {self.landing_page_url}",
+            "",
+            "**Summary**",
+            "",
+            f"- **Total Products Validated:** {len(self.products_data)}",
+            f"- **Product Family Links Found:** {len(self.found_links['family_links'])}",
+            f"- **Product Links Found:** {sum(len(platforms) for platforms in self.found_links['product_links'].values())}",
+            f"- **Errors:** {len(self.errors)}",
+            f"- **Warnings:** {len(self.warnings)}",
+            "",
+        ]
+        
+        # Collect all unique platforms from found links
+        all_platforms = set()
+        if self.found_links["product_links"]:
+            for product_platforms in self.found_links["product_links"].values():
+                all_platforms.update(product_platforms.keys())
+        
+        # Also check products_data to include platforms that should exist
+        for platforms in self.products_data.values():
+            for platform, version in platforms.items():
+                if version is not None:
+                    platform_slug = self.get_platform_slug(platform)
+                    all_platforms.add(platform_slug)
+        
+        # Sort platforms in a consistent order
+        platform_order = ["net", "java", "nodejs", "python"]
+        sorted_platforms = sorted(all_platforms, key=lambda x: (
+            platform_order.index(x) if x in platform_order else 999, x
+        ))
+        
+        # Platform header mapping
+        platform_headers = {
+            "net": ".NET",
+            "java": "Java",
+            "nodejs": "Node.js via Java",
+            "python": "Python via .NET"
+        }
+        
+        if sorted_platforms:
+            # Create table header with Family Page column
+            header = "| Product | Family Page |"
+            separator = "|---------|:------------:|"
+            for platform in sorted_platforms:
+                platform_header = platform_headers.get(platform, platform)
+                header += f" {platform_header} |"
+                separator += ":----------------:|"
+            report_lines.append(header)
+            report_lines.append(separator)
+            
+            # Add rows for each product
+            all_products = sorted(self.products_data.keys())
+            
+            if all_products:
+                for product_name in all_products:
+                    # Normalize product name for lookup
+                    variations = self.get_product_name_variations(product_name)
+                    row = f"| {product_name} |"
+                    
+                    # Add family page link
+                    family_link_found = False
+                    for variation in variations:
+                        if variation in self.found_links["family_links"]:
+                            url = self.found_links["family_links"][variation]
+                            status_code, is_valid = self.validate_link(url)
+                            if is_valid:
+                                row += f" [✓]({url}) |"
+                            else:
+                                row += f" [{status_code}]({url}) |"
+                            family_link_found = True
+                            break
+                    
+                    if not family_link_found:
+                        row += " |"
+                    
+                    # Add platform links
+                    for platform in sorted_platforms:
+                        # Try to find link in any variation
+                        link_found = False
+                        for variation in variations:
+                            if variation in self.found_links["product_links"]:
+                                if platform in self.found_links["product_links"][variation]:
+                                    url = self.found_links["product_links"][variation][platform]
+                                    status_code, is_valid = self.validate_link(url)
+                                    if is_valid:
+                                        row += f" [✓]({url}) |"
+                                    else:
+                                        row += f" [{status_code}]({url}) |"
+                                    link_found = True
+                                    break
+                        
+                        if not link_found:
+                            row += " |"
+                    
+                    report_lines.append(row)
+            else:
+                report_lines.append("| *No products found* |" + " |" * (1 + len(sorted_platforms)))
+        else:
+            report_lines.append("| *No platforms found* |")
+        
+        return report_lines
+    
+    def update_readme(self):
+        """Update README.md with the validation report section."""
+        readme_filename = "README.md"
+        
+        try:
+            # Read current README.md
+            with open(readme_filename, 'r', encoding='utf-8') as f:
+                readme_content = f.read()
+            
+            # Generate new validation report section
+            new_report_section = "\n".join(self._generate_validation_report_section())
+            
+            # Find and replace the Validation Report section
+            # Pattern: ## Validation Report ... until next ## or end of file
+            pattern = r'(## Validation Report.*?)(?=\n## |\Z)'
+            
+            if re.search(pattern, readme_content, re.DOTALL):
+                # Replace existing section
+                updated_content = re.sub(pattern, new_report_section + "\n", readme_content, flags=re.DOTALL)
+            else:
+                # Insert after the description (after first paragraph, before Installation)
+                # Find the position after the description
+                desc_pattern = r'(A validation tool.*?\.)\n\n'
+                match = re.search(desc_pattern, readme_content, re.DOTALL)
+                if match:
+                    insert_pos = match.end()
+                    updated_content = readme_content[:insert_pos] + "\n" + new_report_section + "\n" + readme_content[insert_pos:]
+                else:
+                    # Fallback: insert at the beginning after title
+                    title_match = re.search(r'(# .*?\n\n)', readme_content)
+                    if title_match:
+                        insert_pos = title_match.end()
+                        updated_content = readme_content[:insert_pos] + new_report_section + "\n\n" + readme_content[insert_pos:]
+                    else:
+                        # Last resort: prepend
+                        updated_content = new_report_section + "\n\n" + readme_content
+            
+            # Write updated README.md
+            with open(readme_filename, 'w', encoding='utf-8') as f:
+                f.write(updated_content)
+            
+            print(f"📄 README.md updated with validation report")
+        except Exception as e:
+            print(f"⚠️  Failed to update README.md: {e}")
     
     def _get_timestamp(self) -> str:
         """Get current timestamp as string."""
