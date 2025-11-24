@@ -1,4 +1,4 @@
-name: Landing Page Validation
+name: Landing Page Links Validation
 
 on:
   schedule:
@@ -64,6 +64,15 @@ jobs:
               echo "error_count=1" >> $GITHUB_OUTPUT
             fi
           fi
+      
+      - name: Commit changes
+        run: |
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
+          git remote set-url origin https://${{ github.actor }}:${{ secrets.WRITE_PAT }}@github.com/${{ github.repository }}.git
+          git add validation_report.md product_links.json || true
+          git commit -m "chore: update landing page links validation report"
+          git push origin HEAD
 
       - name: Upload validation report
         if: always()
