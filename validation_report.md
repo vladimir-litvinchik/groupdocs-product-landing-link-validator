@@ -1,6 +1,6 @@
 # GroupDocs Landing Page Links Validation Report
 
-**Generated:** 2025-11-27 06:28:29
+**Generated:** 2025-11-28 06:28:07
 **Landing Page:** https://products.groupdocs.com/
 
 ## Summary
@@ -8,7 +8,7 @@
 - **Total Products Validated:** 16
 - **Product Family Links Found:** 16
 - **Product Links Found:** 49
-- **Errors:** 0
+- **Errors:** 2
 - **Warnings:** 0
 
 ---
@@ -33,3 +33,8 @@
 | Total | [✓](https://products.groupdocs.com/total/) | [✓](https://products.groupdocs.com/total/net/) | [✓](https://products.groupdocs.com/total/java/) | | [✓](https://products.groupdocs.com/total/python-net/) |
 | Viewer | [✓](https://products.groupdocs.com/viewer/) | [✓](https://products.groupdocs.com/viewer/net/) | [✓](https://products.groupdocs.com/viewer/java/) | [✓](https://products.groupdocs.com/viewer/nodejs-java/) | [✓](https://products.groupdocs.com/viewer/python-net/) |
 | Watermark | [✓](https://products.groupdocs.com/watermark/) | [✓](https://products.groupdocs.com/watermark/net/) | [✓](https://products.groupdocs.com/watermark/java/) | [✓](https://products.groupdocs.com/watermark/nodejs-java/) | [✓](https://products.groupdocs.com/watermark/python-net/) |
+
+## Errors
+
+- ❌ Product 'Parser' missing python-net link on landing page
+- ❌ Family page for 'Parser' missing python-net link (expected: /parser/python-net/)

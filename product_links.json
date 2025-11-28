@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-27T06:28:41.083478Z",
+  "generatedAt": "2025-11-28T06:28:17.128732Z",
   "links": {
     "Annotation": {
       "family": "https://products.groupdocs.com/annotation/",
@@ -57,7 +57,8 @@
     "Parser": {
       "family": "https://products.groupdocs.com/parser/",
       "java": "https://products.groupdocs.com/parser/java/",
-      "net": "https://products.groupdocs.com/parser/net/"
+      "net": "https://products.groupdocs.com/parser/net/",
+      "python-net": null
     },
     "Redaction": {
       "family": "https://products.groupdocs.com/redaction/",

@@ -4,7 +4,7 @@ A validation tool that checks the GroupDocs products landing page to ensure it c
 
 ## Validation Report
 
-**Generated:** 2025-11-27 06:28:41
+**Generated:** 2025-11-28 06:28:17
 
 **Landing Page:** https://products.groupdocs.com/
 
@@ -13,7 +13,7 @@ A validation tool that checks the GroupDocs products landing page to ensure it c
 - **Total Products Validated:** 16
 - **Product Family Links Found:** 16
 - **Product Links Found:** 49
-- **Errors:** 0
+- **Errors:** 2
 - **Warnings:** 0
 
 | Product | Family Page | .NET | Java | Node.js via Java | Python via .NET |
