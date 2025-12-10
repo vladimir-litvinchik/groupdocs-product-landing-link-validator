@@ -1,6 +1,6 @@
 # GroupDocs Landing Page Links Validation Report
 
-**Generated:** 2025-12-09 06:29:32
+**Generated:** 2025-12-10 06:29:52
 **Landing Page:** https://products.groupdocs.com/
 
 ## Summary
@@ -8,7 +8,7 @@
 - **Total Products Validated:** 16
 - **Product Family Links Found:** 16
 - **Product Links Found:** 49
-- **Errors:** 2
+- **Errors:** 1
 - **Warnings:** 0
 
 ---
@@ -37,4 +37,3 @@
 ## Errors
 
 - ❌ Product 'Parser' missing python-net link on landing page
-- ❌ Family page for 'Parser' missing python-net link (expected: /parser/python-net/)
