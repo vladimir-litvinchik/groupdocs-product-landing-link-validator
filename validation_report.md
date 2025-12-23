@@ -1,6 +1,6 @@
 # GroupDocs Landing Page Links Validation Report
 
-**Generated:** 2025-12-22 06:31:32
+**Generated:** 2025-12-23 06:30:39
 **Landing Page:** https://products.groupdocs.com/
 
 ## Summary
@@ -8,7 +8,7 @@
 - **Total Products Validated:** 16
 - **Product Family Links Found:** 16
 - **Product Links Found:** 49
-- **Errors:** 1
+- **Errors:** 3
 - **Warnings:** 0
 
 ---
@@ -36,4 +36,6 @@
 
 ## Errors
 
+- ❌ Product 'Markdown' missing java link on landing page
 - ❌ Product 'Parser' missing python-net link on landing page
+- ❌ Family page for 'Markdown' missing java link (expected: /markdown/java/)

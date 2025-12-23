@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-22T06:31:42.012090Z",
+  "generatedAt": "2025-12-23T06:30:47.412020Z",
   "links": {
     "Annotation": {
       "family": "https://products.groupdocs.com/annotation/",
@@ -38,6 +38,7 @@
     },
     "Markdown": {
       "family": "https://products.groupdocs.com/markdown/",
+      "java": null,
       "net": "https://products.groupdocs.com/markdown/net/"
     },
     "Merger": {
