@@ -4,7 +4,7 @@ A validation tool that checks the GroupDocs products landing page to ensure it c
 
 ## Validation Report
 
-**Generated:** 2025-12-26 06:29:25
+**Generated:** 2025-12-27 06:28:02
 
 **Landing Page:** https://products.groupdocs.com/
 
@@ -12,8 +12,8 @@ A validation tool that checks the GroupDocs products landing page to ensure it c
 
 - **Total Products Validated:** 16
 - **Product Family Links Found:** 16
-- **Product Links Found:** 49
-- **Errors:** 3
+- **Product Links Found:** 50
+- **Errors:** 2
 - **Warnings:** 0
 
 | Product | Family Page | .NET | Java | Node.js via Java | Python via .NET |
@@ -27,7 +27,7 @@ A validation tool that checks the GroupDocs products landing page to ensure it c
 | Markdown | [✓](https://products.groupdocs.com/markdown/) | [✓](https://products.groupdocs.com/markdown/net/) | | | |
 | Merger | [✓](https://products.groupdocs.com/merger/) | [✓](https://products.groupdocs.com/merger/net/) | [✓](https://products.groupdocs.com/merger/java/) | [✓](https://products.groupdocs.com/merger/nodejs-java/) | [✓](https://products.groupdocs.com/merger/python-net/) |
 | Metadata | [✓](https://products.groupdocs.com/metadata/) | [✓](https://products.groupdocs.com/metadata/net/) | [✓](https://products.groupdocs.com/metadata/java/) | [✓](https://products.groupdocs.com/metadata/nodejs-java/) | [✓](https://products.groupdocs.com/metadata/python-net/) |
-| Parser | [✓](https://products.groupdocs.com/parser/) | [✓](https://products.groupdocs.com/parser/net/) | [✓](https://products.groupdocs.com/parser/java/) | | |
+| Parser | [✓](https://products.groupdocs.com/parser/) | [✓](https://products.groupdocs.com/parser/net/) | [✓](https://products.groupdocs.com/parser/java/) | | [✓](https://products.groupdocs.com/parser/python-net/) |
 | Redaction | [✓](https://products.groupdocs.com/redaction/) | [✓](https://products.groupdocs.com/redaction/net/) | [✓](https://products.groupdocs.com/redaction/java/) | | [✓](https://products.groupdocs.com/redaction/python-net/) |
 | Search | [✓](https://products.groupdocs.com/search/) | [✓](https://products.groupdocs.com/search/net/) | [✓](https://products.groupdocs.com/search/java/) | [✓](https://products.groupdocs.com/search/nodejs-java/) | |
 | Signature | [✓](https://products.groupdocs.com/signature/) | [✓](https://products.groupdocs.com/signature/net/) | [✓](https://products.groupdocs.com/signature/java/) | [✓](https://products.groupdocs.com/signature/nodejs-java/) | [✓](https://products.groupdocs.com/signature/python-net/) |
