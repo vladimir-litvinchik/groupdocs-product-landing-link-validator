@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-27T09:40:02.761595Z",
+  "generatedAt": "2026-05-28T09:56:49.538912Z",
   "links": {
     "Annotation": {
       "java": "https://products.groupdocs.com/annotation/java/",
@@ -28,7 +28,8 @@
     "Editor": {
       "java": "https://products.groupdocs.com/editor/java/",
       "net": "https://products.groupdocs.com/editor/net/",
-      "nodejs-java": "https://products.groupdocs.com/editor/nodejs-java/"
+      "nodejs-java": "https://products.groupdocs.com/editor/nodejs-java/",
+      "python-net": null
     },
     "Markdown": {
       "java": null,
