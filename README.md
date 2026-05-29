@@ -4,7 +4,7 @@ A validation tool that checks the GroupDocs products landing page to ensure it c
 
 ## Validation Report
 
-**Generated:** 2026-05-28 09:56:49
+**Generated:** 2026-05-29 09:49:24
 
 **Landing Page:** https://products.groupdocs.com/
 
@@ -12,8 +12,8 @@ A validation tool that checks the GroupDocs products landing page to ensure it c
 
 - **Total Products Validated:** 16
 - **Product Family Links Found:** 0
-- **Product Links Found:** 51
-- **Errors:** 18
+- **Product Links Found:** 52
+- **Errors:** 17
 - **Warnings:** 0
 
 | Product | Family Page | .NET | Java | Node.js via Java | Python via .NET |
@@ -23,7 +23,7 @@ A validation tool that checks the GroupDocs products landing page to ensure it c
 | Classification | | [✓](https://products.groupdocs.com/classification/net/) | | | |
 | Comparison | | [✓](https://products.groupdocs.com/comparison/net/) | [✓](https://products.groupdocs.com/comparison/java/) | [✓](https://products.groupdocs.com/comparison/nodejs-java/) | [✓](https://products.groupdocs.com/comparison/python-net/) |
 | Conversion | | [✓](https://products.groupdocs.com/conversion/net/) | [✓](https://products.groupdocs.com/conversion/java/) | [✓](https://products.groupdocs.com/conversion/nodejs-java/) | [✓](https://products.groupdocs.com/conversion/python-net/) |
-| Editor | | [✓](https://products.groupdocs.com/editor/net/) | [✓](https://products.groupdocs.com/editor/java/) | [✓](https://products.groupdocs.com/editor/nodejs-java/) | |
+| Editor | | [✓](https://products.groupdocs.com/editor/net/) | [✓](https://products.groupdocs.com/editor/java/) | [✓](https://products.groupdocs.com/editor/nodejs-java/) | [✓](https://products.groupdocs.com/editor/python-net/) |
 | Markdown | | [✓](https://products.groupdocs.com/markdown/net/) | | | [✓](https://products.groupdocs.com/markdown/python-net/) |
 | Merger | | [✓](https://products.groupdocs.com/merger/net/) | [✓](https://products.groupdocs.com/merger/java/) | [✓](https://products.groupdocs.com/merger/nodejs-java/) | [✓](https://products.groupdocs.com/merger/python-net/) |
 | Metadata | | [✓](https://products.groupdocs.com/metadata/net/) | [✓](https://products.groupdocs.com/metadata/java/) | [✓](https://products.groupdocs.com/metadata/nodejs-java/) | [✓](https://products.groupdocs.com/metadata/python-net/) |

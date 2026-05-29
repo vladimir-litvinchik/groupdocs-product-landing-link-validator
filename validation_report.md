@@ -1,14 +1,14 @@
 # GroupDocs Landing Page Links Validation Report
 
-**Generated:** 2026-05-28 09:56:43
+**Generated:** 2026-05-29 09:49:14
 **Landing Page:** https://products.groupdocs.com/
 
 ## Summary
 
 - **Total Products Validated:** 16
 - **Product Family Links Found:** 0
-- **Product Links Found:** 51
-- **Errors:** 18
+- **Product Links Found:** 52
+- **Errors:** 17
 - **Warnings:** 0
 
 ---
@@ -22,7 +22,7 @@
 | Classification | | [✓](https://products.groupdocs.com/classification/net/) | | | |
 | Comparison | | [✓](https://products.groupdocs.com/comparison/net/) | [✓](https://products.groupdocs.com/comparison/java/) | [✓](https://products.groupdocs.com/comparison/nodejs-java/) | [✓](https://products.groupdocs.com/comparison/python-net/) |
 | Conversion | | [✓](https://products.groupdocs.com/conversion/net/) | [✓](https://products.groupdocs.com/conversion/java/) | [✓](https://products.groupdocs.com/conversion/nodejs-java/) | [✓](https://products.groupdocs.com/conversion/python-net/) |
-| Editor | | [✓](https://products.groupdocs.com/editor/net/) | [✓](https://products.groupdocs.com/editor/java/) | [✓](https://products.groupdocs.com/editor/nodejs-java/) | |
+| Editor | | [✓](https://products.groupdocs.com/editor/net/) | [✓](https://products.groupdocs.com/editor/java/) | [✓](https://products.groupdocs.com/editor/nodejs-java/) | [✓](https://products.groupdocs.com/editor/python-net/) |
 | Markdown | | [✓](https://products.groupdocs.com/markdown/net/) | | | [✓](https://products.groupdocs.com/markdown/python-net/) |
 | Merger | | [✓](https://products.groupdocs.com/merger/net/) | [✓](https://products.groupdocs.com/merger/java/) | [✓](https://products.groupdocs.com/merger/nodejs-java/) | [✓](https://products.groupdocs.com/merger/python-net/) |
 | Metadata | | [✓](https://products.groupdocs.com/metadata/net/) | [✓](https://products.groupdocs.com/metadata/java/) | [✓](https://products.groupdocs.com/metadata/nodejs-java/) | [✓](https://products.groupdocs.com/metadata/python-net/) |
@@ -42,7 +42,6 @@
 - ❌ Product 'Comparison' missing family link on landing page (tried: comparison)
 - ❌ Product 'Conversion' missing family link on landing page (tried: conversion)
 - ❌ Product 'Editor' missing family link on landing page (tried: editor)
-- ❌ Product 'Editor' missing python-net link on landing page
 - ❌ Product 'Markdown' missing family link on landing page (tried: markdown)
 - ❌ Product 'Markdown' missing java link on landing page
 - ❌ Product 'Merger' missing family link on landing page (tried: merger)
