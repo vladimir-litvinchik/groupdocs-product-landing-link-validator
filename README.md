@@ -4,7 +4,7 @@ A validation tool that checks the GroupDocs products landing page to ensure it c
 
 ## Validation Report
 
-**Generated:** 2026-06-18 10:16:18
+**Generated:** 2026-06-19 10:21:30
 
 **Landing Page:** https://products.groupdocs.com/
 
@@ -12,13 +12,13 @@ A validation tool that checks the GroupDocs products landing page to ensure it c
 
 - **Total Products Validated:** 16
 - **Product Family Links Found:** 0
-- **Product Links Found:** 52
-- **Errors:** 18
+- **Product Links Found:** 53
+- **Errors:** 17
 - **Warnings:** 0
 
 | Product | Family Page | .NET | Java | Node.js via Java | Python via .NET |
 |---------|:------------:|:----------------:|:----------------:|:----------------:|:----------------:|
-| Annotation | | [✓](https://products.groupdocs.com/annotation/net/) | [✓](https://products.groupdocs.com/annotation/java/) | | |
+| Annotation | | [✓](https://products.groupdocs.com/annotation/net/) | [✓](https://products.groupdocs.com/annotation/java/) | | [✓](https://products.groupdocs.com/annotation/python-net/) |
 | Assembly | | [✓](https://products.groupdocs.com/assembly/net/) | [✓](https://products.groupdocs.com/assembly/java/) | | [✓](https://products.groupdocs.com/assembly/python-net/) |
 | Classification | | [✓](https://products.groupdocs.com/classification/net/) | | | |
 | Comparison | | [✓](https://products.groupdocs.com/comparison/net/) | [✓](https://products.groupdocs.com/comparison/java/) | [✓](https://products.groupdocs.com/comparison/nodejs-java/) | [✓](https://products.groupdocs.com/comparison/python-net/) |

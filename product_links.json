@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-18T10:16:18.753334Z",
+  "generatedAt": "2026-06-19T10:21:30.567569Z",
   "links": {
     "Annotation": {
       "java": "https://products.groupdocs.com/annotation/java/",
       "net": "https://products.groupdocs.com/annotation/net/",
-      "python-net": null
+      "python-net": "https://products.groupdocs.com/annotation/python-net/"
     },
     "Assembly": {
       "java": "https://products.groupdocs.com/assembly/java/",
